@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_public_article"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <com.finalczz.playtogether.utils.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.finalczz.playtogether.utils.TitleLayout>
+
+
+</LinearLayout>

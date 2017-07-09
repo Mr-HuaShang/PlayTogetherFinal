@@ -1,17 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.finalczz.playtogether.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+            <TextView
+                android:id="@+id/search_address"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长沙"
+                android:drawableRight="@mipmap/down"
+                android:textColor="@color/colorText"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:text="标题"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RadioButton
+            android:id="@+id/rb_shouye"
+            style="@style/bt_item"
+            android:drawableTop="@drawable/shouye_style"
+            android:text="首页"
+            />
+        <RadioButton
+            android:id="@+id/rb_court"
+            style="@style/bt_item"
+            android:drawableTop="@drawable/court_style"
+            android:text="球场"
+            />
+        <!--<Button
+            android:id="@+id/bt_center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            style="@style/bt_item"
+            android:drawableTop="@drawable/center_style"
+            android:background="@mipmap/back_center"
+            />-->
+        <RelativeLayout
+            android:id="@+id/rl_click"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/chang"
+                />
+
+            <ImageView
+                android:id="@+id/center_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/add"
+                />
+
+        </RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/rb_zb"
+            style="@style/bt_item"
+            android:drawableTop="@drawable/zb_style"
+            android:text="装备"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/bt_item"
+            android:drawableTop="@drawable/my_style"
+            android:text="我的"
+            />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_below="@id/appbar_toolbar"
+        android:layout_above="@id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaa6a6"
+        android:layout_below="@id/frame"
+        >
+    </View>
 </RelativeLayout>

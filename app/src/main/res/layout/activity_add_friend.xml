@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <com.finalczz.playtogether.utils.TitleLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.finalczz.playtogether.utils.TitleLayout>
+
+
+    <EditText
+        android:layout_below="@id/top_title"
+        android:id="@+id/et_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="请输入需要查找的账号"
+        android:textSize="14sp"
+        android:textColorHint="#c9c0c0"
+        />
+
+    <RelativeLayout
+        android:id="@+id/add_gone_relative"
+        android:padding="6dp"
+        android:layout_below="@id/et_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_add_friend"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_add_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/image_add_friend"
+            android:text="nick"
+            />
+
+        <Button
+            android:id="@+id/bt_add_friend"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button"
+            android:text="添加"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+</RelativeLayout>

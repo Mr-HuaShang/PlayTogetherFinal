@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/my_top_linear"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@mipmap/james"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/user_my_name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/text_usually"
+            android:text="用户名"
+            />
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/sex_boy"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/text_usually"
+            android:text="球龄"
+            />
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/age_years"
+            />
+
+        <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_age_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/text_usually"
+        android:text="0"
+        />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/record_court"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/text_usually"
+            android:text="约球场数"
+            />
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/record_court"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_record_court"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/text_usually"
+            android:text="0"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="65dp">
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"
+                android:text="0"/>
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进攻"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="65dp">
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/textBlue"
+                android:text="0"/>
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="防守"
+                android:textSize="18dp"
+                android:textColor="@color/textBlue"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="65dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rank_iv"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:src="@mipmap/rank_first"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/text_pre"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+
+    </View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="签名:"
+            android:textColor="@color/text_usually"
+            android:gravity="center"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="签名信息"
+            android:textColor="@color/text_usually"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
